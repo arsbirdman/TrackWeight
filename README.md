@@ -1,4 +1,6 @@
-# TrackWeight
+# TrackWeight — Large Weight Display
+
+Fork of [KrishKrosh/TrackWeight](https://github.com/KrishKrosh/TrackWeight) with a huge, responsive weight readout on the Scale tab and guided result screen. Enlarge the window or enter full screen to make the digits even bigger. Zeroing still works with the button or spacebar.
 
 **Turn your MacBook's trackpad into a precise digital weighing scale**
 

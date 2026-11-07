@@ -273,29 +273,16 @@ struct ResultView: View {
     var body: some View {
         VStack(spacing: 30) {
             Image(systemName: "checkmark.circle.fill")
-                .font(.system(size: 60))
+                .font(.system(size: 36))
                 .foregroundStyle(.green)
-                .scaleEffect(1.0)
-                .onAppear {
-                    withAnimation(.spring(response: 0.6, dampingFraction: 0.8)) {
-                        // Animation handled by parent view
-                    }
-                }
             
             Text("Your object weighs")
                 .font(.system(size: 20, weight: .medium))
                 .foregroundStyle(.secondary)
             
-            VStack(spacing: 5) {
-                Text(String(format: "%.1f", weight))
-                    .font(.system(size: 56, weight: .bold, design: .monospaced))
-                    .foregroundStyle(.primary)
-                
-                Text("grams")
-                    .font(.system(size: 18, weight: .medium))
-                    .foregroundStyle(.secondary)
-            }
-            
+            WeightReadout(weight: weight)
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+
             Button(action: onRestart) {
                 Image(systemName: "arrow.clockwise")
                     .font(.system(size: 20, weight: .medium))
@@ -307,7 +294,9 @@ struct ResultView: View {
                     )
             }
             .buttonStyle(.plain)
+            .accessibilityLabel("Weigh another object")
         }
+        .padding(24)
     }
 }
 
