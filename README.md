@@ -1,6 +1,6 @@
-# TrackWeight — Large Weight Display
+# Weightpad
 
-Fork of [KrishKrosh/TrackWeight](https://github.com/KrishKrosh/TrackWeight) with a huge, responsive weight readout on the Scale tab and guided result screen. Enlarge the window or enter full screen to make the digits even bigger. Zeroing still works with the button or spacebar.
+Fork of [KrishKrosh/TrackWeight](https://github.com/KrishKrosh/TrackWeight) renamed to **Weightpad**, with a huge, responsive weight readout on the Scale tab and guided result screen. Enlarge the window or enter full screen to make the digits even bigger. Zeroing still works with the button or spacebar.
 
 **Turn your MacBook's trackpad into a precise digital weighing scale**
 
@@ -31,7 +31,11 @@ The key insight is that trackpad pressure events are only generated when there's
 
 ## Installation
 
-### Option 1: Download DMG (Recommended)
+### Upstream installation
+
+The download and Homebrew options below install the original TrackWeight. To run this Weightpad fork, use **Build from Source**; the built app is named `Weightpad.app`.
+
+### Option 1: Download DMG
 
 1. Go to the [Releases](https://github.com/krishkrosh/TrackWeight/releases) page
 2. Download the latest TrackWeight DMG file

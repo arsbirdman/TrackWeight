@@ -21,7 +21,7 @@ else
 fi
 
 # Configuration
-export APP_NAME="TrackWeight"
+export APP_NAME="Weightpad"
 export SCHEME="TrackWeight"
 export CONFIGURATION="Release"
 export BUILD_DIR="$(pwd)/local_build"

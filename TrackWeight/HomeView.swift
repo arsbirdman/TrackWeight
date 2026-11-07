@@ -18,7 +18,7 @@ struct HomeView: View {
                     .font(.system(size: 80, weight: .ultraLight))
                     .foregroundStyle(Color.blue)
                 
-                Text("TrackWeight")
+                Text("Weightpad")
                     .font(.system(size: 48, weight: .bold, design: .rounded))
                     .foregroundStyle(
                         LinearGradient(

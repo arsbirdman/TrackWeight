@@ -58,7 +58,7 @@ struct WelcomeView: View {
                 .font(.system(size: 80, weight: .ultraLight))
                 .foregroundStyle(.primary)
             
-            Text("TrackWeight")
+            Text("Weightpad")
                 .font(.system(size: 36, weight: .bold, design: .rounded))
                 .foregroundStyle(.primary)
             

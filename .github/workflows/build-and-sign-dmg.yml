@@ -17,7 +17,7 @@ on:
         type: boolean
 
 env:
-  APP_NAME: TrackWeight
+  APP_NAME: Weightpad
   SCHEME: TrackWeight
   CONFIGURATION: Release
 
@@ -277,13 +277,13 @@ jobs:
         tag_name: ${{ steps.version_info.outputs.version }}
         name: ${{ env.APP_NAME }} ${{ steps.version_info.outputs.version }}
         body: |
-          # TrackWeight ${{ steps.version_info.outputs.version }}
+          # Weightpad ${{ steps.version_info.outputs.version }}
           
           Transform your MacBook's trackpad into a precise digital weighing scale!
           
           ## Installation
           1. Download the DMG file below
-          2. Open the DMG and drag TrackWeight.app to your Applications folder
+          2. Open the DMG and drag Weightpad.app to your Applications folder
           3. Run the app and follow the setup instructions
           
           ## Requirements
@@ -306,11 +306,11 @@ jobs:
     - name: Summary
       run: |
         echo "## Build Summary" >> $GITHUB_STEP_SUMMARY
-        echo "✅ Successfully built and packaged TrackWeight DMG" >> $GITHUB_STEP_SUMMARY
+        echo "✅ Successfully built and packaged Weightpad DMG" >> $GITHUB_STEP_SUMMARY
         echo "📦 DMG file: ${{ steps.version_info.outputs.dmg_name }}" >> $GITHUB_STEP_SUMMARY
         echo "🔗 Original repository: https://github.com/KrishKrosh/TrackWeight" >> $GITHUB_STEP_SUMMARY
         echo "" >> $GITHUB_STEP_SUMMARY
         echo "The DMG includes:" >> $GITHUB_STEP_SUMMARY
-        echo "- TrackWeight.app (signed and notarized if certificates provided)" >> $GITHUB_STEP_SUMMARY
+        echo "- Weightpad.app (signed and notarized if certificates provided)" >> $GITHUB_STEP_SUMMARY
         echo "- Clean professional DMG with just the app and Applications link" >> $GITHUB_STEP_SUMMARY
         echo "- Proper code signing with hardened runtime enabled" >> $GITHUB_STEP_SUMMARY

@@ -12,7 +12,7 @@ struct ScaleView: View {
     var body: some View {
         VStack(spacing: 16) {
             VStack(spacing: 8) {
-                Text("Track Weight")
+                Text("Weightpad")
                     .font(.system(size: 24, weight: .bold, design: .rounded))
 
                 Label(
